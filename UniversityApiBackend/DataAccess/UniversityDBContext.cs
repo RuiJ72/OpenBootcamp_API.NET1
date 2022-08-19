@@ -12,5 +12,7 @@ namespace UniversityApiBackend.DataAccess
 
         // TODO tablas de la base datos
         public DbSet<User>? Users { get; set; }
+        public DbSet<Course>? Courses { get; set; }
+        public DbSet<Categoria>? Categorias { get; set; } 
     }
 }
