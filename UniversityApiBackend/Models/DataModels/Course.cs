@@ -20,6 +20,13 @@ namespace UniversityApiBackend.Models.DataModels
 
         public string Description { get; set; } = string.Empty;
         public Level Level { get; set; } = Level.Basico;
-      
+
+        [Required]
+        public ICollection<Categoria> categorias { get; set; } = new List<Categoria>();
+        [Required]
+        public Chapter Chapter { get; set; } = new Chapter();
+
+        [Required]
+        public ICollection<Student> Students { get; set; } = new List<Student>();
     }
 }
